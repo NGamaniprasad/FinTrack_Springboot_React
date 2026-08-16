@@ -1,0 +1,488 @@
+
+/* =========================================================
+   FINTRACK NAVBAR
+========================================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #e5e7eb;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 4px 18px rgba(15, 23, 42, 0.05);
+}
+
+
+/* =========================================================
+   NAVBAR CONTAINER
+========================================================= */
+
+.navbar-container {
+    width: min(1200px, 92%);
+
+    min-height: 72px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.navbar-brand {
+    flex-shrink: 0;
+
+    text-decoration: none;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.8px;
+
+    color: #0f172a;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.navbar-brand span {
+    color: #2563eb;
+}
+
+
+.navbar-brand:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.navbar-links {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 6px;
+}
+
+
+.navbar-links a {
+    position: relative;
+
+    padding: 10px 14px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #475569;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.navbar-links a:hover {
+    color: #2563eb;
+
+    background: #eff6ff;
+}
+
+
+/* =========================================================
+   PUBLIC NAVBAR
+========================================================= */
+
+.navbar-login {
+    margin-left: 12px;
+
+    color: #2563eb !important;
+
+    background: #eff6ff;
+}
+
+
+.navbar-login:hover {
+    background: #dbeafe !important;
+}
+
+
+.navbar-register {
+    color: #ffffff !important;
+
+    background: #2563eb;
+
+    padding-left: 17px !important;
+    padding-right: 17px !important;
+}
+
+
+.navbar-register:hover {
+    color: #ffffff !important;
+
+    background: #1d4ed8 !important;
+
+    transform: translateY(-1px);
+}
+
+
+.navbar-admin-login {
+    color: #7c3aed !important;
+
+    background: #f5f3ff;
+}
+
+
+.navbar-admin-login:hover {
+    color: #6d28d9 !important;
+
+    background: #ede9fe !important;
+}
+
+
+/* =========================================================
+   USER NAVBAR
+========================================================= */
+
+.navbar-profile-link {
+    color: #2563eb !important;
+
+    background: #eff6ff;
+}
+
+
+.navbar-profile-link:hover {
+    background: #dbeafe !important;
+}
+
+
+.navbar-password-link {
+    color: #7c3aed !important;
+
+    background: #f5f3ff;
+}
+
+
+.navbar-password-link:hover {
+    background: #ede9fe !important;
+}
+
+
+/* =========================================================
+   USER BUTTON
+========================================================= */
+
+.navbar-user-menu {
+    margin-left: 8px;
+}
+
+
+.navbar-user-button {
+    border: none;
+
+    padding: 9px 13px;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    color: #334155;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.navbar-user-button:hover {
+    background: #e2e8f0;
+
+    color: #0f172a;
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.navbar-logout {
+    margin-left: 8px;
+
+    border: 1px solid #fecaca;
+
+    padding: 10px 16px;
+
+    border-radius: 9px;
+
+    background: #fff5f5;
+
+    color: #dc2626;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.navbar-logout:hover {
+    background: #fee2e2;
+
+    border-color: #fca5a5;
+
+    color: #b91c1c;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ADMIN NAVBAR
+========================================================= */
+
+.navbar-links a[href="/admin/dashboard"] {
+    color: #7c3aed;
+
+    background: #f5f3ff;
+}
+
+
+.navbar-links a[href="/admin/dashboard"]:hover {
+    color: #6d28d9;
+
+    background: #ede9fe;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.navbar-menu-button {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    font-size: 21px;
+
+    cursor: pointer;
+}
+
+
+.navbar-menu-button:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .navbar-container {
+        width: 94%;
+    }
+
+    .navbar-links {
+        gap: 2px;
+    }
+
+    .navbar-links a {
+        padding: 9px 10px;
+
+        font-size: 13px;
+    }
+
+    .navbar-logout {
+        padding: 9px 12px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .navbar-container {
+        position: relative;
+
+        min-height: 66px;
+    }
+
+
+    .navbar-menu-button {
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+
+    .navbar-links {
+        display: none;
+
+        position: absolute;
+
+        top: calc(100% + 1px);
+
+        left: 0;
+        right: 0;
+
+        width: 100%;
+
+        padding: 12px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 5px;
+
+        background: #ffffff;
+
+        border: 1px solid #e5e7eb;
+
+        border-top: none;
+
+        box-shadow:
+            0 12px 25px
+            rgba(15, 23, 42, 0.08);
+
+        border-radius:
+            0 0 14px 14px;
+    }
+
+
+    .navbar-links-open {
+        display: flex;
+    }
+
+
+    .navbar-links a {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 12px 14px;
+
+        text-align: left;
+    }
+
+
+    .navbar-login,
+    .navbar-register,
+    .navbar-admin-login,
+    .navbar-profile-link,
+    .navbar-password-link {
+        margin-left: 0;
+
+        text-align: left;
+    }
+
+
+    .navbar-user-menu {
+        margin-left: 0;
+    }
+
+
+    .navbar-user-button {
+        width: 100%;
+
+        text-align: left;
+    }
+
+
+    .navbar-logout {
+        width: 100%;
+
+        margin-left: 0;
+
+        text-align: left;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .navbar-container {
+        width: 94%;
+    }
+
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+
+    .navbar-links {
+        padding: 10px;
+    }
+
+}
+

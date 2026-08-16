@@ -1,0 +1,489 @@
+/* =====================================================
+   BUDGET PAGE
+===================================================== */
+
+.budgets-page {
+    min-height: 100vh;
+    padding: 40px 24px;
+    background: #f7f8fc;
+}
+
+.budgets-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.budgets-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.budgets-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #6b7280;
+}
+
+.budgets-header h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.budgets-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.budgets-summary {
+    display: flex;
+    gap: 12px;
+}
+
+.budgets-summary > div {
+    min-width: 130px;
+    padding: 16px 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.budgets-summary span {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.budgets-summary strong {
+    font-size: 22px;
+    color: #111827;
+}
+
+
+/* =====================================================
+   MESSAGE BOXES
+===================================================== */
+
+.budgets-error,
+.budgets-success {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.budgets-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+}
+
+.budgets-success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #15803d;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.budgets-form-card {
+    margin-bottom: 35px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+.budgets-form-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+.budgets-form-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.budgets-form-header h2 {
+    margin: 0 0 5px;
+    font-size: 21px;
+    color: #111827;
+}
+
+.budgets-form-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.budgets-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.budgets-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.budgets-field label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+}
+
+.budgets-field input,
+.budgets-field select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #111827;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.budgets-field input:focus,
+.budgets-field select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.budgets-field input:disabled,
+.budgets-field select:disabled {
+    background: #f3f4f6;
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   FORM BUTTONS
+===================================================== */
+
+.budgets-form-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.budgets-save-button,
+.budgets-cancel-button {
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease,
+                opacity 0.15s ease;
+}
+
+.budgets-save-button {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+.budgets-cancel-button {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.budgets-save-button:hover,
+.budgets-cancel-button:hover {
+    transform: translateY(-1px);
+}
+
+.budgets-save-button:disabled,
+.budgets-cancel-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   LIST HEADER
+===================================================== */
+
+.budgets-list-section {
+    margin-top: 10px;
+}
+
+.budgets-list-header {
+    margin-bottom: 20px;
+}
+
+.budgets-list-header h2 {
+    margin: 0 0 5px;
+    font-size: 24px;
+    color: #111827;
+}
+
+.budgets-list-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.budgets-empty {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px dashed #d1d5db;
+    border-radius: 18px;
+}
+
+.budgets-empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    border-radius: 16px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.budgets-empty h3 {
+    margin: 0 0 7px;
+    color: #111827;
+    font-size: 19px;
+}
+
+.budgets-empty p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   BUDGET GRID
+===================================================== */
+
+.budgets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* =====================================================
+   BUDGET CARD
+===================================================== */
+
+.budget-card {
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.budget-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.budget-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.budget-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.budget-month {
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.budget-card h3 {
+    margin: 0 0 8px;
+    font-size: 25px;
+    color: #111827;
+}
+
+.budget-amount-label {
+    display: block;
+    margin-bottom: 18px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.budget-card-actions {
+    display: flex;
+    gap: 10px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.budget-edit-button,
+.budget-delete-button {
+    flex: 1;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.budget-edit-button {
+    border: 1px solid #c7d2fe;
+    background: #eef2ff;
+    color: #4338ca;
+}
+
+.budget-delete-button {
+    border: 1px solid #fecaca;
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.budget-edit-button:hover,
+.budget-delete-button:hover {
+    opacity: 0.8;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.budgets-loading {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .budgets-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .budgets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .budgets-page {
+        padding: 25px 15px;
+    }
+
+    .budgets-header h1 {
+        font-size: 30px;
+    }
+
+    .budgets-summary {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .budgets-summary > div {
+        flex: 1;
+        min-width: 100px;
+    }
+
+    .budgets-form {
+        grid-template-columns: 1fr;
+    }
+
+    .budgets-form-actions {
+        grid-column: auto;
+        flex-direction: column;
+    }
+
+    .budgets-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-card-actions {
+        flex-direction: column;
+    }
+}

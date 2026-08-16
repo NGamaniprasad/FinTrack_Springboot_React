@@ -1,0 +1,645 @@
+/* =========================================================
+   ADMIN DASHBOARD
+========================================================= */
+
+.admin-dashboard-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px 0 80px;
+}
+
+.admin-dashboard-container {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.admin-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 45px 0 55px;
+}
+
+.admin-label {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.admin-header-content h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.admin-header-content p {
+    margin-top: 14px;
+    color: #64748b;
+    font-size: 18px;
+}
+
+.admin-header-content strong {
+    color: #111827;
+}
+
+.admin-header-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 30px;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.admin-status-dot {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.admin-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.admin-section-heading span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.admin-section-heading h2 {
+    margin: 8px 0 0;
+    color: #111827;
+    font-size: 30px;
+}
+
+.admin-section-heading > p {
+    margin: 0;
+    color: #64748b;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.admin-overview-section {
+    margin-bottom: 65px;
+}
+
+.admin-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.admin-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 150px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+.admin-stat-icon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.users-icon {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.active-icon {
+    background: #ecfdf5;
+    color: #16a34a;
+}
+
+.inactive-icon {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.income-icon {
+    background: #ecfdf5;
+    color: #16a34a;
+}
+
+.expense-icon {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+.admin-stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.admin-stat-content span {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.admin-stat-content strong {
+    color: #111827;
+    font-size: 32px;
+}
+
+.admin-stat-content small {
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   MANAGEMENT
+========================================================= */
+
+.admin-management {
+    margin-bottom: 70px;
+}
+
+.admin-management-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.admin-management-card {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+}
+
+.admin-management-card:hover {
+    transform: translateY(-4px);
+    border-color: #bfdbfe;
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.10);
+}
+
+.management-icon {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 15px;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.management-content h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 19px;
+}
+
+.management-content p {
+    margin: 0 0 15px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.management-link {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTACT MESSAGE SECTION
+========================================================= */
+
+.admin-contact-section {
+    margin-top: 30px;
+    padding-top: 55px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.admin-message-summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.admin-message-count {
+    min-width: 180px;
+    padding: 20px 25px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+}
+
+.admin-message-count strong {
+    display: block;
+    color: #111827;
+    font-size: 30px;
+}
+
+.admin-message-count span {
+    display: block;
+    margin-top: 4px;
+    color: #64748b;
+}
+
+.admin-message-count.new {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.admin-message-count.new strong {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   CONTACT LIST
+========================================================= */
+
+.admin-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-contact-card {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+    transition: 0.2s ease;
+}
+
+.admin-contact-card:hover {
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.admin-contact-card.is-new {
+    border-left: 5px solid #2563eb;
+}
+
+
+/* =========================================================
+   CONTACT HEADER
+========================================================= */
+
+.admin-contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.admin-contact-header h3 {
+    margin: 0 0 5px;
+    color: #111827;
+    font-size: 20px;
+}
+
+.admin-contact-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CONTACT STATUS
+========================================================= */
+
+.admin-contact-status {
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.admin-contact-status.new {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.admin-contact-status.read {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+
+/* =========================================================
+   CONTACT MESSAGE
+========================================================= */
+
+.admin-contact-message {
+    padding: 20px 0;
+}
+
+.admin-contact-message strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 14px;
+}
+
+.admin-contact-message p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   CONTACT DATE
+========================================================= */
+
+.admin-contact-date {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 18px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.admin-contact-date strong {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   CONTACT ACTIONS
+========================================================= */
+
+.admin-contact-actions {
+    display: flex;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid #eef2f7;
+}
+
+.admin-message-read-button,
+.admin-message-delete-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 17px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.admin-message-read-button {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.admin-message-read-button:hover {
+    background: #dbeafe;
+}
+
+.admin-message-delete-button {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.admin-message-delete-button:hover {
+    background: #fee2e2;
+}
+
+
+/* =========================================================
+   EMPTY MESSAGES
+========================================================= */
+
+.admin-empty-messages {
+    padding: 60px 30px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+}
+
+.admin-empty-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.admin-empty-messages h3 {
+    margin: 0 0 8px;
+    color: #111827;
+}
+
+.admin-empty-messages p {
+    margin: 0;
+    color: #64748b;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.admin-loading-card {
+    padding: 60px 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.admin-loading-card h2,
+.admin-loading-card h3 {
+    color: #111827;
+}
+
+.admin-loading-card p {
+    color: #64748b;
+}
+
+.admin-loading-spinner {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 20px;
+    border: 4px solid #dbeafe;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: admin-spin 0.8s linear infinite;
+}
+
+@keyframes admin-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.admin-error {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 22px;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 15px;
+}
+
+.admin-error-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dc2626;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: 800;
+}
+
+.admin-error h3 {
+    margin: 0 0 5px;
+    color: #991b1b;
+}
+
+.admin-error p {
+    margin: 0;
+    color: #b91c1c;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .admin-stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-management-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .admin-dashboard-page {
+        padding: 25px 0 50px;
+    }
+
+    .admin-dashboard-container {
+        width: 94%;
+    }
+
+    .admin-dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 0 40px;
+    }
+
+    .admin-header-content h1 {
+        font-size: 36px;
+    }
+
+    .admin-section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-stat-card {
+        min-height: 125px;
+    }
+
+    .admin-message-summary {
+        flex-direction: column;
+    }
+
+    .admin-message-count {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .admin-contact-header {
+        flex-direction: column;
+    }
+
+    .admin-contact-actions {
+        flex-direction: column;
+    }
+
+    .admin-message-read-button,
+    .admin-message-delete-button {
+        width: 100%;
+    }
+}

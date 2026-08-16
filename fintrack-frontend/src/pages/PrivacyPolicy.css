@@ -1,0 +1,46 @@
+.privacy-page {
+    min-height: 70vh;
+    padding: 70px 24px;
+}
+
+.privacy-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 45px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.privacy-container h1 {
+    font-size: 40px;
+}
+
+.privacy-updated {
+    color: #6b7280;
+    margin: 10px 0 40px;
+}
+
+.privacy-container section {
+    margin-bottom: 30px;
+}
+
+.privacy-container h2 {
+    margin-bottom: 10px;
+}
+
+.privacy-container p {
+    color: #6b7280;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+
+    .privacy-container {
+        padding: 25px;
+    }
+
+    .privacy-container h1 {
+        font-size: 30px;
+    }
+}
