@@ -886,5 +886,5 @@ Spring Boot
 Spring Security
 JWT
 Spring Data JPA
-PostgreSQL
+MySQL
 ```
