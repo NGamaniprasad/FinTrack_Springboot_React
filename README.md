@@ -74,7 +74,7 @@ FinTrack
 * Spring Security
 * JWT
 * BCrypt Password Encoding
-* PostgreSQL
+* MySQL
 * Maven
 * Swagger / OpenAPI
 
