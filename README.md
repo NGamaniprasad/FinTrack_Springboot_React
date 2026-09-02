@@ -1,6 +1,6 @@
 # FinTrack
 
-FinTrack is a full-stack personal finance management application built with **Spring Boot**, **React/Vite**, **PostgreSQL**, and **JWT authentication**.
+FinTrack is a full-stack personal finance management application built with **Spring Boot**, **React/Vite**, **MySQL**, and **JWT authentication**.
 
 The application allows users to manage their income, expenses, categories, budgets, and profile information. Administrators can manage users, view platform statistics, receive customer contact messages, and update their administrator profile and password.
 
