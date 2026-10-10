@@ -656,6 +656,15 @@ Change Password
 ```
 
 ---
+# SCREEN SHOTS:
+
+<img width="640" height="340" alt="fn1" src="https://github.com/user-attachments/assets/3d6c1e7d-afe7-4c19-ba95-ea62a0492518" />
+
+<img width="640" height="336" alt="fn2" src="https://github.com/user-attachments/assets/cefb7832-a3c1-42fb-82ba-0c6367d397c0" />
+
+<img width="640" height="335" alt="fn3" src="https://github.com/user-attachments/assets/b7290a9d-a026-4a24-9f89-b66074012624" />
+
+
 
 # 🐛 Troubleshooting
 
@@ -874,17 +883,7 @@ FinTrack currently includes:
 
 ---
 
-# 👨‍💻 FinTrack
+# 👨‍💻 Author
+-- N Gamini Prasad
 
-**FinTrack — Personal Finance Management System**
 
-Built with:
-
-```text
-React + Vite
-Spring Boot
-Spring Security
-JWT
-Spring Data JPA
-MySQL
-```
